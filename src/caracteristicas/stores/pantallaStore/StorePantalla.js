@@ -10,7 +10,7 @@ export default function StorePantalla() {
             <View style={styles.buscador}>
                 <Searchbar/>  
             </View>
-            <View style={{backgroundColor: "#f7f7f7", flex: 1, padding: 18}}>
+            <View style={{backgroundColor: "#f4f4f4", flex: 1, padding: 18}}>
                 <StoreInfo/> 
             </View>     
         </SafeAreaView>

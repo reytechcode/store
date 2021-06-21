@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
+import { Card } from 'react-native-paper';
 
 export const StoreInfo = ({ store = {}}) => {
     const {
@@ -12,21 +13,32 @@ export const StoreInfo = ({ store = {}}) => {
         isClosedTemporarity,
     } = store;
     return (
-        <View>
-            <Image
+        <Card elevation={5} style={styles.card}>
+            <Card.Cover
+                key={name}
                 source={{uri: photos[0]}}
-                resizeMethod="scale"
                 style={styles.imgStore}
             />
-            <Text>{name}</Text>
-            <Text>{address}</Text>
-        </View>
+            <Text style={styles.titulo}>{name}</Text>
+            <Text style={styles.direccion}>{address}</Text>
+        </Card>
     )
 }
 
 const styles = StyleSheet.create({
+    card: {
+        backgroundColor: "white",
+    },
     imgStore: {
-        width: 250,
-        height: 150,
+        padding: 18,
+        backgroundColor: "white",
+    },
+    titulo: {
+        paddingLeft: 18,
+        paddingBottom: 4,
+    },
+    direccion: {
+        paddingLeft: 18,
+        paddingBottom: 18,
     }
 })

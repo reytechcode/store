@@ -1,6 +1,23 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { Card } from 'react-native-paper';
+import styled from "styled-components/native";
+
+const StoreCard = styled(Card) `
+    background-color: white;
+`;
+const StoreCardCover = styled(Card.Cover) `
+    padding: 18px;
+    background-color: white;
+`;
+const Title = styled.Text `
+    padding-left: 18px;
+    padding-bottom: 4px;
+`;
+const Address = styled(Text) `
+    padding-left: 18px;
+    padding-bottom: 18px;
+`;
 
 export const StoreInfo = ({ store = {}}) => {
     const {
@@ -13,32 +30,17 @@ export const StoreInfo = ({ store = {}}) => {
         isClosedTemporarity,
     } = store;
     return (
-        <Card elevation={5} style={styles.card}>
-            <Card.Cover
+        <StoreCard elevation={5}>
+            <StoreCardCover
                 key={name}
                 source={{uri: photos[0]}}
-                style={styles.imgStore}
             />
-            <Text style={styles.titulo}>{name}</Text>
-            <Text style={styles.direccion}>{address}</Text>
-        </Card>
+            <Title>{name}</Title>
+            <Address>{address}</Address>
+        </StoreCard>
     )
 }
 
 const styles = StyleSheet.create({
-    card: {
-        backgroundColor: "white",
-    },
-    imgStore: {
-        padding: 18,
-        backgroundColor: "white",
-    },
-    titulo: {
-        paddingLeft: 18,
-        paddingBottom: 4,
-    },
-    direccion: {
-        paddingLeft: 18,
-        paddingBottom: 18,
-    }
+    
 })

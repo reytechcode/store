@@ -4,19 +4,20 @@ import { Card } from 'react-native-paper';
 import styled from "styled-components/native";
 
 const StoreCard = styled(Card) `
-    background-color: white;
+    background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 const StoreCardCover = styled(Card.Cover) `
-    padding: 18px;
-    background-color: white;
+    padding: ${(props) => props.theme.space[4]};
+    background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 const Title = styled.Text `
-    padding-left: 18px;
-    padding-bottom: 4px;
+    padding-left: ${(props) => props.theme.space[4]};
+    padding-bottom: ${(props) => props.theme.space[1]};
+    color: ${(props) => props.theme.colors.text.primary}
 `;
 const Address = styled(Text) `
-    padding-left: 18px;
-    padding-bottom: 18px;
+    padding-left: ${(props) => props.theme.space[4]};
+    padding-bottom: ${(props) => props.theme.space[4]};
 `;
 
 export const StoreInfo = ({ store = {}}) => {

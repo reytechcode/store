@@ -10,12 +10,12 @@ const SafeArea = styled(SafeAreaView) `
     ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
 `;
 const BarSearch = styled(View) `
-    padding: 15px;
+    padding: ${(props) => props.theme.space[3]};
 `;
 const StoreList = styled(View) `
-flex: 1;
-padding: 18px;
-background-Color: #51c4d3;
+    flex: 1;
+    padding: ${(props) => props.theme.space[4]};
+    
 `;
 export default function StorePantalla() {
     return (

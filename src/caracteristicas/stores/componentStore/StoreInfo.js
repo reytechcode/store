@@ -11,15 +11,17 @@ const StoreCardCover = styled(Card.Cover) `
     background-color: ${(props) => props.theme.colors.bg.primary};
 `;
 const Title = styled.Text `
-    padding-left: ${(props) => props.theme.space[4]};
-    padding-bottom: ${(props) => props.theme.space[1]};
+    font-family: ${(props) => props.theme.fonts.heading}
+    font-size: ${(props) => props.theme.fontSizes.body}
     color: ${(props) => props.theme.colors.text.primary}
 `;
 const Address = styled(Text) `
-    padding-left: ${(props) => props.theme.space[4]};
-    padding-bottom: ${(props) => props.theme.space[4]};
+    font-family: ${(props) => props.theme.fonts.body}
+    font-size: ${(props) => props.theme.fontSizes.caption}
 `;
-
+const Info = styled(View) `
+    padding: ${(props) => props.theme.space[3]};
+`;
 export const StoreInfo = ({ store = {}}) => {
     const {
         name = "WAWA NEGRO CAFE",
@@ -36,8 +38,10 @@ export const StoreInfo = ({ store = {}}) => {
                 key={name}
                 source={{uri: photos[0]}}
             />
-            <Title>{name}</Title>
-            <Address>{address}</Address>
+            <Info>
+                <Title>{name}</Title>
+                <Address>{address}</Address>
+            </Info>
         </StoreCard>
     )
 }

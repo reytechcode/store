@@ -14,7 +14,9 @@ const BarSearch = styled(View) `
 `;
 const StoreList = styled(View) `
     flex: 1;
-    padding: ${(props) => props.theme.space[4]};
+    padding-top: ${(props) => props.theme.space[2]};
+    padding-left: ${(props) => props.theme.space[3]};
+    padding-right: ${(props) => props.theme.space[3]};
     
 `;
 export default function StorePantalla() {

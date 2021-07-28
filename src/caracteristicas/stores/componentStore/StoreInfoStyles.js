@@ -4,6 +4,7 @@ import styled from "styled-components/native";
 
 export const StoreCard = styled(Card) `
     background-color: ${(props) => props.theme.colors.bg.primary};
+    margin-bottom: ${(props) => props.theme.space[4]};
 `;
 export const StoreCardCover = styled(Card.Cover) `
     padding: ${(props) => props.theme.space[4]};

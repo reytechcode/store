@@ -1,0 +1,166 @@
+{
+    "html_attributions": [],
+    "next_page_token": "some token",
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8296531,
+                    "lng": -77.6495974
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.829427,
+                        "lng": -77.649435
+                    },
+                    "southwest": {
+                        "lat": 0.829417,
+                        "lng": -77.649418
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Manao's Pizza",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/mTCjz3s/Manao-s-Pizza.jpg"],
+            "place_id": "some place id 1",
+            "rating": 4,
+            "reference": "",
+            "user_ratings_total": 221,
+            "vicinity": "08 #24-78 a 24-226, Ipiales, Nariño, Colombia"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8289859,
+                    "lng": -77.6514235
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.828846,
+                        "lng": -77.651403
+                    },
+                    "southwest": {
+                        "lat": 0.828825,
+                        "lng": -77.651375
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Las Bravas",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/wcLvSYh/Las-Bravas.jpg"],
+            "place_id": "some place id 2",
+            "rating": 5,
+            "reference": "",
+            "user_ratings_total": 321,
+            "vicinity": "crra 7 #25-09 diagonal al centro comercial Gran Plaza, Ipiales, Nariño, Colombia"
+        },
+        {
+            "business_status": "CLOSED_TEMPORARILY",
+            "geometry": {
+                "location": {
+                    "lat": 0.8288705,
+                    "lng": -77.6304428
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.828911,
+                        "lng": -77.630788
+                    },
+                    "southwest": {
+                        "lat": 0.828896,
+                        "lng": -77.630769
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Doña Lili",
+            "permanently_closed": true,
+            "photos": ["https://i.ibb.co/YBDh20C/Do-a-lili.png"],
+            "place_id": "some place id 3",
+            "plus_code": "",
+            "rating": 5,
+            "reference": "",
+            "scope": "",
+            "types": "",
+            "user_ratings_total": 321,
+            "vicinity": "Cra. 1 #5a-290 a 5a-364, Ipiales, Nariño, Colombia"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8239114,
+                    "lng": -77.642729
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.823328,
+                        "lng": -77.641694
+                    },
+                    "southwest": {
+                        "lat": 0.823299,
+                        "lng": -77.641665
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/espresso-cup--v1.png",
+            "name": "arepaisita",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/rkxPsdS/arepaisita.png"],
+            "place_id": "some place id 4",
+            "rating": 5,
+            "reference": "",
+            "user_ratings_total": 30,
+            "vicinity": "Carrera 11, Benjamín Herrera # 14-83, Ipiales, Nariño, Colombia"
+        },
+        {
+            "html_attributions": [],
+            "next_page_token": "some token",
+            "results": [
+                {
+                    "business_status": "CLOSED_TEMPORARILY",
+                    "geometry": {
+                        "location": {
+                            "lat": 0.828845,
+                            "lng": -77.6512675
+                        },
+                        "viewport": {
+                            "northeast": {
+                                "lat": 0.828932,
+                                "lng": -77.651525
+                            },
+                            "southwest": {
+                                "lat": 0.828917,
+                                "lng": -77.651504
+                            }
+                        }
+                    },
+                    "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+                    "name": "Pizza Rola",
+                    "permanently_closed": true,
+                    "photos": ["https://i.ibb.co/BVb29sd/Pizza-Rola.jpg"],
+                    "place_id": "some place id 5",
+                    "plus_code": "",
+                    "rating": 5,
+                    "reference": "",
+                    "scope": "",
+                    "types": "",
+                    "user_ratings_total": 120,
+                    "vicinity": "Cra. 7 ###25-31, Ipiales, Nariño, Colombia"
+                }
+            ],
+            "status": "OK"
+        }
+    ],
+    "status": "OK"
+}

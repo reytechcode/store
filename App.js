@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View} from 'react-native';
 import { ThemeProvider } from "styled-components/native";
 import { theme } from "./src/theme";
-import StorePantalla from './src/caracteristicas/stores/pantallaStore/StorePantalla';
+import { StorePantalla } from './src/caracteristicas/stores/pantallaStore/StorePantalla';
 import {
   useFonts as useOswald,
   Oswald_400Regular,
@@ -12,6 +12,9 @@ import {
   useFonts as useLato,
   Lato_400Regular,
 } from '@expo-google-fonts/lato';
+
+import { StoreContextProvider } from "./src/servicios/stores/StoresContext";
+
 export default function App() {
 
   const [oswaldLoaded] = useOswald({
@@ -27,7 +30,9 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <StorePantalla/>
+      <StoreContextProvider>
+       <StorePantalla/>
+      </StoreContextProvider>
     </ThemeProvider>
     
   );

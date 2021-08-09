@@ -1,9 +1,11 @@
 import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useContext } from 'react';
 import { StyleSheet, Text, View, SafeAreaView, StatusBar, FlatList } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 import { StoreInfo } from '../componentStore/StoreInfo';
 import styled from "styled-components/native";
+
+import { StoresContext } from "../../../servicios/stores/StoresContext";
 
 const SafeArea = styled(SafeAreaView) `
     flex: 1;
@@ -20,19 +22,23 @@ const StoreList = styled(FlatList).attrs({
         paddingBottom: 16,
     }
 }) ``;
-export default function StorePantalla() {
+export const StorePantalla = () => {
+    const { isLoading, error, stores } = useContext(StoresContext);
     return (
         <SafeArea>
             <BarSearch>
                 <Searchbar/>  
             </BarSearch>
             <StoreList
-                data={[{ name: 1}, {name: 2}, {name: 3}]}
-                renderItem={() => <StoreInfo/>}
+                data={stores}
+                renderItem={({ item }) => {
+                  return (
+                    <StoreInfo store={item}/>
+                  );
+                } 
+            }
                 keyExtractor={(item) => item.name}
-            />
-                
-                 
+            />           
         </SafeArea>
     ) 
 }

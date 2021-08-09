@@ -1,0 +1,105 @@
+{
+    "html_attributions": [],
+    "next_page_token": "some token",
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.6628875,
+                    "lng": -77.7107906
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.663246,
+                        "lng": -77.710526
+                    },
+                    "southwest": {
+                        "lat": 0.663232,
+                        "lng": -77.710509
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Frida Café-Bar",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/6t6S57M/Frida-Caf-Bar.jpg"],
+            "place_id": "some place id 1",
+            "rating": 3,
+            "reference": "",
+            "user_ratings_total": 21,
+            "vicinity": "Vía al Oriente Julio Andrade"
+        },
+        {
+            "html_attributions": [],
+            "next_page_token": "some token",
+            "results": [
+                {
+                    "business_status": "CLOSED_TEMPORARILY",
+                    "geometry": {
+                        "location": {
+                            "lat": 0.6186911,
+                            "lng": -77.7348485
+                        },
+                        "viewport": {
+                            "northeast": {
+                                "lat": 0.61828,
+                                "lng": -77.731913
+                            },
+                            "southwest": {
+                                "lat": 0.618262,
+                                "lng": -77.731927
+                            }
+                        }
+                    },
+                    "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+                    "name": "La Casa Del Cuy",
+                    "permanently_closed": true,
+                    "photos": ["https://i.ibb.co/MR3jD42/La-Casa-Del-Cuy.jpg"],
+                    "place_id": "some place id 2",
+                    "plus_code": "",
+                    "rating": 4,
+                    "reference": "",
+                    "scope": "",
+                    "types": "",
+                    "user_ratings_total": 124,
+                    "vicinity": "San Pedro de Huaca"
+                }
+            ],
+            "status": "OK"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.6394588,
+                    "lng": -77.7270348
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.640473,
+                        "lng": -77.728305
+                    },
+                    "southwest": {
+                        "lat": 0.639945,
+                        "lng": -77.72794
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/melting-ice-cream.png",
+            "name": "Helados YAMI",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/BKrBVGv/Helados-YAMI.jpg"],
+            "place_id": "some place id 3",
+            "rating": 4,
+            "reference": "",
+            "user_ratings_total": 221,
+            "vicinity": "Carr. Panamericana, Cantón San Pedro de Huaca"
+        }
+    ],
+    "status": "OK"
+}

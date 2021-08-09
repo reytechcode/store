@@ -1,0 +1,189 @@
+{
+    "html_attributions": [],
+    "next_page_token": "some token",
+    "results": [
+        {
+            "business_status": "CLOSED_TEMPORARILY",
+            "geometry": {
+                "location": {
+                    "lat": 0.8203219,
+                    "lng": -77.7104782
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.820215,
+                        "lng": -77.708654
+                    },
+                    "southwest": {
+                        "lat": 0.820207,
+                        "lng": -77.708632
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Mama Rosita",
+            "permanently_closed": true,
+            "photos": ["https://i.ibb.co/Ld0YvGx/mama-rosita.jpg"],
+            "place_id": "some place id 1",
+            "plus_code": "",
+            "rating": 3,
+            "reference": "",
+            "scope": "",
+            "types": "",
+            "user_ratings_total": 123,
+            "vicinity": "Av. Coral"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.7988223,
+                    "lng": "--77.7332876"
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.798915,
+                        "lng": -77.733301
+                    },
+                    "southwest": {
+                        "lat": 0.798902,
+                        "lng": -77.733282
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/espresso-cup--v1.png",
+            "name": "Wawa Negro Café",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/23tgzn0/Wawa-Negro-Caf.jpg"],
+            "place_id": "some place id 2",
+            "rating": 4,
+            "reference": "",
+            "user_ratings_total": 10,
+            "vicinity": "Av Veintimilla 37, Tulcán"
+        },
+        {
+            "business_status": "CLOSED_TEMPORARILY",
+            "geometry": {
+                "location": {
+                    "lat": 0.8043777,
+                    "lng": -77.726813
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.804448,
+                        "lng": -77.726961
+                    },
+                    "southwest": {
+                        "lat": 0.80442,
+                        "lng": -77.726936
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Centinela Norteña",
+            "permanently_closed": true,
+            "photos": ["https://i.ibb.co/2nZzWg0/Centinela-Norte-a.png"],
+            "place_id": "some place id 3",
+            "plus_code": "",
+            "rating": 3,
+            "reference": "",
+            "scope": "",
+            "types": "",
+            "user_ratings_total": 50,
+            "vicinity": "Av. Bolívar, Tulcán"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8135723,
+                    "lng": -77.7180616
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.813577,
+                        "lng": -77.718065
+                    },
+                    "southwest": {
+                        "lat": 0.813541,
+                        "lng": -77.718093
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Luwak Pizzeria",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/jVxtkkY/Luwak-Pizzeria.jpg"],
+            "place_id": "some place id 4",
+            "rating": 5,
+            "reference": "",
+            "user_ratings_total": 40,
+            "vicinity": "Ayacucho, Tulcán"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8140459,
+                    "lng": -77.7170062
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.814059,
+                        "lng": -77.71713
+                    },
+                    "southwest": {
+                        "lat": 0.81405,
+                        "lng": -77.717111
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Chiles Cerveceria Artesanal",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/QPhGVNR/chiles-tulcan.jpg"],
+            "place_id": "some place id 5",
+            "rating": 5,
+            "reference": "",
+            "user_ratings_total": 4,
+            "vicinity": "Junín, y, Tulcán"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8153297,
+                    "lng": -77.7137109
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.815048,
+                        "lng": -77.714028
+                    },
+                    "southwest": {
+                        "lat": 0.815039,
+                        "lng": -77.714005
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Fusion wok & chicken",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/m9VjYcL/Fusion-wok-chicken.jpg"],
+            "place_id": "some place id 6",
+            "rating": 4,
+            "reference": "",
+            "user_ratings_total": 2,
+            "vicinity": "Sucre y Panama esquina (Frente al Centro Comercial Popular, Tulcán 040102"
+        }
+    ],
+    "status": "OK"
+}

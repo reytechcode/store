@@ -14,7 +14,8 @@ export const storesTransform = ({ results = [] }) => {
     const mappedResults = results.map((store) => {
         return {
             ...store,
-            isClosed: store.business_status ===   "CLOSED_TEMPORARILY",          
+            isClosed: store.business_status ===   "CLOSED_TEMPORARILY",
+            address: store.vicinity,                      
         };
     });
     return camelize(mappedResults);

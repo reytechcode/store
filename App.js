@@ -14,6 +14,7 @@ import {
 } from '@expo-google-fonts/lato';
 
 import { StoreContextProvider } from "./src/servicios/stores/StoresContext";
+import { Navigation } from "./src/componentes/navigation/index";
 
 export default function App() {
 
@@ -31,7 +32,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StoreContextProvider>
-       <StorePantalla/>
+       <Navigation/>
       </StoreContextProvider>
     </ThemeProvider>
     

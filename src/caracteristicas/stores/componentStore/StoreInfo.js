@@ -23,6 +23,7 @@ export const StoreInfo = ({ store = {}}) => {
         address = "Av Veintimilla 37, Tulcán",
         rating = 4,
         isClosed = true,
+        placeId,
     } = store;
     const ratingArray = Array.from(new Array(Math.floor(rating)));
     
@@ -36,8 +37,8 @@ export const StoreInfo = ({ store = {}}) => {
                 <Title>{name}</Title>
                 <Section>
                     <Rating>
-                        {ratingArray.map(() => (
-                            <SvgXml xml={estrella} width={20} height={20}/>
+                        {ratingArray.map((_, i) => (
+                            <SvgXml key={`star-${placeId}-${i}`} xml={estrella} width={20} height={20}/>
                         ))}
                     </Rating>
                     <SectionEnd>

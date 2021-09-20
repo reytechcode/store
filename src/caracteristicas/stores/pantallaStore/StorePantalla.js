@@ -12,7 +12,9 @@ const SafeArea = styled(SafeAreaView) `
     ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
 `;
 const BarSearch = styled(View) `
-    padding: ${(props) => props.theme.space[3]};
+    padding-left: ${(props) => props.theme.space[2]};
+    padding-right: ${(props) => props.theme.space[2]};
+    padding-top: ${(props) => props.theme.space[2]};
 `;
 const StoreList = styled(FlatList).attrs({
     contentContainerStyle: {

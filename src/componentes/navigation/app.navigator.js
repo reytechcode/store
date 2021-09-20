@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from "@expo/vector-icons";
 
-import { StorePantalla } from "../../caracteristicas/stores/pantallaStore/StorePantalla";
+import { StoresNavigator } from "./stores.navigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -25,6 +25,7 @@ const createScreenOptions = ({ route }) => {
         ),
         tabBarActiveTintColor: '#C7364B',
         tabBarInactiveTintColor: 'gray',
+        headerShown: false,
     }
 }
 
@@ -33,7 +34,7 @@ export const AppNavigator = () => (
         <Tab.Navigator
         screenOptions={createScreenOptions}
         >
-            <Tab.Screen name="Tiendas" component={StorePantalla}/>
+            <Tab.Screen name="Tiendas" component={StoresNavigator}/>
             <Tab.Screen name="Mapa" component={Maps}/>
             <Tab.Screen name="Cuenta" component={Account}/>
         </Tab.Navigator>

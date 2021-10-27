@@ -4,6 +4,9 @@ import { StyleSheet, Text, View} from 'react-native';
 import { ThemeProvider } from "styled-components/native";
 import { theme } from "./src/theme";
 import { StorePantalla } from './src/caracteristicas/stores/pantallaStore/StorePantalla';
+
+import { LocationContextProvider } from './src/servicios/stores/location/locationContext';
+
 import {
   useFonts as useOswald,
   Oswald_400Regular,
@@ -31,9 +34,11 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <StoreContextProvider>
-       <Navigation/>
-      </StoreContextProvider>
+      <LocationContextProvider>
+        <StoreContextProvider>
+          <Navigation/>
+        </StoreContextProvider>
+      </LocationContextProvider>
     </ThemeProvider>
     
   );

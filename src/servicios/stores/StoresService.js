@@ -1,7 +1,7 @@
 import { ciudades } from "./storesData/index";
 import camelize from "camelize";
 
-export const storesRequest = (location = "0.8147717,-77.7369835") => {
+export const storesRequest = (location) => {
     return new Promise((resolve, reject) => {
         const ciudad = ciudades[location];
         if(!ciudad) {

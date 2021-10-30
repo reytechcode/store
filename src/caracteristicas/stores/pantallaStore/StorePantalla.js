@@ -4,18 +4,14 @@ import { StyleSheet, Text, View, SafeAreaView, StatusBar, FlatList } from 'react
 import { Searchbar, ActivityIndicator, Colors } from 'react-native-paper';
 import { StoreInfo } from '../componentStore/StoreInfo';
 import styled from "styled-components/native";
-
 import { StoresContext } from "../../../servicios/stores/StoresContext";
+import { Search } from '../componentStore/searchComponent';
 
 const SafeArea = styled(SafeAreaView) `
     flex: 1;
     ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
 `;
-const BarSearch = styled(View) `
-    padding-left: ${(props) => props.theme.space[2]};
-    padding-right: ${(props) => props.theme.space[2]};
-    padding-top: ${(props) => props.theme.space[2]};
-`;
+
 const StoreList = styled(FlatList).attrs({
     contentContainerStyle: {
         paddingTop: 8, 
@@ -46,9 +42,9 @@ export const StorePantalla = () => {
                 </LoadingContainer>
             )
             }
-            <BarSearch>
-                <Searchbar/>  
-            </BarSearch>
+
+            <Search/>
+            
             <StoreList
                 data={stores}
                 renderItem={({ item }) => {

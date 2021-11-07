@@ -1,6 +1,6 @@
 import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
 import React, { useContext } from 'react';
-import { StyleSheet, Text, View, SafeAreaView, StatusBar, FlatList } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, StatusBar, FlatList, Pressable } from 'react-native';
 import { Searchbar, ActivityIndicator, Colors } from 'react-native-paper';
 import { StoreInfo } from '../componentStore/StoreInfo';
 import styled from "styled-components/native";
@@ -28,7 +28,7 @@ const LoadingContainer = styled(View)`
     top: 50%;
     left: 50%;
 `;
-export const StorePantalla = () => {
+export const StorePantalla = ({ navigation }) => {
     const { isLoading, error, stores } = useContext(StoresContext);
     return (
         <SafeArea>
@@ -49,7 +49,11 @@ export const StorePantalla = () => {
                 data={stores}
                 renderItem={({ item }) => {
                   return (
-                    <StoreInfo store={item}/>
+                    <Pressable onPress={() => navigation.navigate("Detalles", {
+                        store: item,
+                    })}>
+                        <StoreInfo store={item}/>
+                    </Pressable>
                   );
                 } 
             }

@@ -3,35 +3,34 @@
     "next_page_token": "some token",
     "results": [
         {
-            "business_status": "CLOSED_TEMPORARILY",
+            "business_status": "OPERATIONAL",
             "geometry": {
                 "location": {
-                    "lat": 0.8203219,
-                    "lng": -77.7104782
+                    "lat": 0.8135723,
+                    "lng": -77.7180616
                 },
                 "viewport": {
                     "northeast": {
-                        "lat": 0.820215,
-                        "lng": -77.708654
+                        "lat": 0.813577,
+                        "lng": -77.718065
                     },
                     "southwest": {
-                        "lat": 0.820207,
-                        "lng": -77.708632
+                        "lat": 0.813541,
+                        "lng": -77.718093
                     }
                 }
             },
             "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
-            "name": "Mama Rosita",
-            "permanently_closed": true,
-            "photos": ["https://i.ibb.co/Ld0YvGx/mama-rosita.jpg"],
-            "place_id": "some place id 1",
-            "plus_code": "",
-            "rating": 3,
+            "name": "Luwak Pizzeria",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/jVxtkkY/Luwak-Pizzeria.jpg"],
+            "place_id": "some place id 4",
+            "rating": 5,
             "reference": "",
-            "scope": "",
-            "types": "",
-            "user_ratings_total": 123,
-            "vicinity": "Av. Coral"
+            "user_ratings_total": 40,
+            "vicinity": "Ayacucho, Tulcán"
         },
         {
             "business_status": "OPERATIONAL",
@@ -95,34 +94,35 @@
             "vicinity": "Av. Bolívar, Tulcán"
         },
         {
-            "business_status": "OPERATIONAL",
+            "business_status": "CLOSED_TEMPORARILY",
             "geometry": {
                 "location": {
-                    "lat": 0.8135723,
-                    "lng": -77.7180616
+                    "lat": 0.8203219,
+                    "lng": -77.7104782
                 },
                 "viewport": {
                     "northeast": {
-                        "lat": 0.813577,
-                        "lng": -77.718065
+                        "lat": 0.820215,
+                        "lng": -77.708654
                     },
                     "southwest": {
-                        "lat": 0.813541,
-                        "lng": -77.718093
+                        "lat": 0.820207,
+                        "lng": -77.708632
                     }
                 }
             },
             "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
-            "name": "Luwak Pizzeria",
-            "opening_hours": {
-                "close_now": true
-            },
-            "photos": ["https://i.ibb.co/jVxtkkY/Luwak-Pizzeria.jpg"],
-            "place_id": "some place id 4",
-            "rating": 5,
+            "name": "Mama Rosita",
+            "permanently_closed": true,
+            "photos": ["https://i.ibb.co/Ld0YvGx/mama-rosita.jpg"],
+            "place_id": "some place id 1",
+            "plus_code": "",
+            "rating": 3,
             "reference": "",
-            "user_ratings_total": 40,
-            "vicinity": "Ayacucho, Tulcán"
+            "scope": "",
+            "types": "",
+            "user_ratings_total": 123,
+            "vicinity": "Av. Coral"
         },
         {
             "business_status": "OPERATIONAL",

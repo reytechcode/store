@@ -3,8 +3,9 @@ import { Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from "@expo/vector-icons";
-
 import { StoresNavigator } from "./stores.navigator";
+
+import { MapPantalla } from '../../caracteristicas/map/pantallaMap/mapPantalla';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,7 +15,6 @@ const TAB_ICON = {
     Cuenta: "person-circle-outline",
 }
 
-const Maps = () => <Text>Mapa</Text>
 const Account = () => <Text>Mi cuenta</Text>
 
 const createScreenOptions = ({ route }) => {
@@ -35,7 +35,7 @@ export const AppNavigator = () => (
         screenOptions={createScreenOptions}
         >
             <Tab.Screen name="Tiendas" component={StoresNavigator}/>
-            <Tab.Screen name="Mapa" component={Maps}/>
+            <Tab.Screen name="Mapa" component={MapPantalla}/>
             <Tab.Screen name="Cuenta" component={Account}/>
         </Tab.Navigator>
     </NavigationContainer>

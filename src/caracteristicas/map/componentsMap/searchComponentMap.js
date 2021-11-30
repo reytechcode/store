@@ -8,6 +8,11 @@ const BarSearch = styled(View) `
     padding-left: ${(props) => props.theme.space[2]};
     padding-right: ${(props) => props.theme.space[2]};
     padding-top: ${(props) => props.theme.space[2]};
+
+    position: absolute;
+    z-index: 999;
+    top: 43px;
+    width: 100%;
 `;
 
 export const Search = () => {
@@ -22,6 +27,7 @@ export const Search = () => {
         <BarSearch>
             <Searchbar
                 placeholder="Buscar la ciudad"
+                icon="map"
                 value={searchKeyword}
                 onSubmitEditing={() => {
                     search(searchKeyword);

@@ -26,7 +26,7 @@
                 "close_now": true
             },
             "photos": ["https://i.ibb.co/jVxtkkY/Luwak-Pizzeria.jpg"],
-            "place_id": "some place id 4",
+            "place_id": "some place id 1",
             "rating": 5,
             "reference": "",
             "user_ratings_total": 40,
@@ -37,7 +37,7 @@
             "geometry": {
                 "location": {
                     "lat": 0.7988223,
-                    "lng": "--77.7332876"
+                    "lng": -77.7332876
                 },
                 "viewport": {
                     "northeast": {
@@ -115,7 +115,7 @@
             "name": "Mama Rosita",
             "permanently_closed": true,
             "photos": ["https://i.ibb.co/Ld0YvGx/mama-rosita.jpg"],
-            "place_id": "some place id 1",
+            "place_id": "some place id 4",
             "plus_code": "",
             "rating": 3,
             "reference": "",
@@ -183,6 +183,126 @@
             "reference": "",
             "user_ratings_total": 2,
             "vicinity": "Sucre y Panama esquina (Frente al Centro Comercial Popular, Tulcán 040102"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8174976,
+                    "lng": -77.7108758
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.8176493741429638, 
+                        "lng": -77.71064912150871
+                    },
+                    "southwest": {
+                        "lat": 0.8176010992852928, 
+                        "lng": -77.71066990863865
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Tablitas El Coyote",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/F8cK0cq/Tablitas-El-Coyote.jpg"],
+            "place_id": "some place id 7",
+            "rating": 2,
+            "reference": "",
+            "user_ratings_total": 2,
+            "vicinity": "Av Sucre entre Brasil y, Paraguay, Tulcán 040102"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8214243,
+                    "lng": -77.7077098
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.8215590485489717, 
+                        "lng": -77.70780769589763
+                    },
+                    "southwest": {
+                        "lat": 0.8215228424406636, 
+                        "lng": -77.70782580080792 
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Los cebiches de la Rumiñahui",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/gjVrBtx/Los-Cebiches-de-la-Rumi-ahui.png"],
+            "place_id": "some place id 8",
+            "rating": 2,
+            "reference": "",
+            "user_ratings_total": 2,
+            "vicinity": "Calderon, Tulcán"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8176041,
+                    "lng": -77.7110787
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.8176155039583639, 
+                        "lng": -77.71104311102454
+                    },
+                    "southwest": {
+                        "lat": 0.8175813092750398,  
+                        "lng": -77.71104847544271 
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/bar.png",
+            "name": "Al Toque Café Resto Bar",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/87fN9cP/Al-Toque-Caf-Resto-Bar.jpg"],
+            "place_id": "some place id 9",
+            "rating": 4,
+            "reference": "",
+            "user_ratings_total": 2,
+            "vicinity": "Av Brasil, Tulcán"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 0.8176041,
+                    "lng": -77.7110787
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 0.8176155039583639, 
+                        "lng": -77.71104311102454
+                    },
+                    "southwest": {
+                        "lat": 0.8175813092750398,  
+                        "lng": -77.71104847544271 
+                    }
+                }
+            },
+            "icon": "https://img.icons8.com/material-two-tone/96/000000/cutlery.png",
+            "name": "Holiday's",
+            "opening_hours": {
+                "close_now": true
+            },
+            "photos": ["https://i.ibb.co/fk068cp/Holiday-s.jpg"],
+            "place_id": "some place id 10",
+            "rating": 4,
+            "reference": "",
+            "user_ratings_total": 2,
+            "vicinity": "Av Veintimilla, Tulcán"
         }
     ],
     "status": "OK"

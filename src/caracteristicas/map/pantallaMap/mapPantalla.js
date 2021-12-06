@@ -34,7 +34,16 @@ export const MapPantalla = () => {
                 }}
             >
                 {stores.map((store) => {
-                    return null;
+                    return (
+                        <MapView.Marker
+                            key={store.name}
+                            title={store.name}
+                            coordinate={{
+                                latitude: store.geometry.location.lat,
+                                longitude: store.geometry.location.lng,
+                            }}
+                        />
+                    );
                 })}
             </Map>
         </>

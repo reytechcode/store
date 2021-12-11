@@ -4,13 +4,14 @@ import styled from "styled-components/native";
 import { Search } from "../componentsMap/searchComponentMap";
 import { LocationContext } from "../../../servicios/stores/location/locationContext";
 import { StoresContext } from "../../../servicios/stores/StoresContext";
+import { MapCallout } from "../componentsMap/calloutMap";
 
 const Map = styled(MapView)`
     height: 100%;
     width: 100%;
 `;
 
-export const MapPantalla = () => {
+export const MapPantalla = ({ navigation }) => {
     const { location } = useContext(LocationContext);
     const { stores = [] } = useContext(StoresContext);
     const [latDelta, setLatDelta] = useState(0);
@@ -42,9 +43,17 @@ export const MapPantalla = () => {
                                 latitude: store.geometry.location.lat,
                                 longitude: store.geometry.location.lng,
                             }}
-                        />
+                        >
+                            <MapView.Callout
+                                onPress={() => navigation.navigate("Detalles", { store, })}
+                            >
+                                <MapCallout store={store}/>
+                            </MapView.Callout>
+
+                        </MapView.Marker>
+                        
                     );
-                })}
+                })} 
             </Map>
         </>
     );

@@ -1,8 +1,11 @@
 import React from "react";
-import { Text } from "react-native";
+import { ImgBackground, ImgCover } from "../componentsAccount/accountStyles";
 
 export const InicioPantalla = () => {
     return (
-        <Text>Pantalla de Inicio</Text>
+        <ImgBackground>
+            <ImgCover/>
+            
+        </ImgBackground>
     );
 }

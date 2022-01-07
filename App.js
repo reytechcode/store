@@ -5,8 +5,9 @@ import { ThemeProvider } from "styled-components/native";
 import { theme } from "./src/theme";
 import { StorePantalla } from './src/caracteristicas/stores/pantallaStore/StorePantalla';
 import { LocationContextProvider } from './src/servicios/stores/location/locationContext';
-
 import * as firebase from "firebase";
+
+import { AuthenticationContextProvider } from './src/servicios/authentication/authenticationContext';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -51,11 +52,13 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <AuthenticationContextProvider>
         <LocationContextProvider>
           <StoreContextProvider>
             <Navigation/>
           </StoreContextProvider>
         </LocationContextProvider>
+      </AuthenticationContextProvider>
     </ThemeProvider>
     
   );

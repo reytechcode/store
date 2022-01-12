@@ -1,7 +1,7 @@
 import React, { useState, createContext } from "react";
 import * as firebase from "firebase";
 import { loginRequest } from "./authenticationService";
-import { isEmpty } from "lodash";
+import { isEmpty, size } from "lodash";
 import { validarEmail } from "../../utils/utils";
 
 export const AuthenticationContext = createContext();
@@ -26,9 +26,30 @@ export const AuthenticationContextProvider = ({ children }) => {
                 setError("El correo o la contraseña están incorrectos");
             });
         }
-
-        
     };
+
+    const onRegister = (email, password, repeatedPassword) => {
+        if (isEmpty(email) || isEmpty(password) || isEmpty(repeatedPassword)) {
+            setError("Debe de llenar todos los campos");
+        }else if (password !== repeatedPassword) {
+            setError("Las contraseñas no coinciden");
+        }else if ( !validarEmail(email)){
+            setError("Verifique que el correo este bien escrito");
+        }else if(size(password) < 6) {
+            setError("La contraseña debe de tener más de 6 caracteres");
+        }else {
+            firebase
+                .auth()
+                .createUserWithEmailAndPassword(email, password)
+                .then((u) => {
+                    setUser(u);
+                    setIsLoading(false);
+                }).catch((e) => {
+                    setIsLoading(false);
+                    setError("El correo ya existe");
+                });
+        }
+    }
 
     return(
         <AuthenticationContext.Provider
@@ -38,6 +59,7 @@ export const AuthenticationContextProvider = ({ children }) => {
                 isLoading,
                 error,
                 onLogin,
+                onRegister,
             }}
         >
             {children}

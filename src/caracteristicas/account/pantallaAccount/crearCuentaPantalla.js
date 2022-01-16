@@ -6,13 +6,13 @@ import { ImgBackground,
     TextError
  } from "../componentsAccount/accountStyles";
 import { AuthenticationContext } from "../../../servicios/authentication/authenticationContext";
-import { Button } from "react-native-paper";
+import { Button, ActivityIndicator, Colors } from "react-native-paper";
  
 export const CrearCuentaPantalla = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [repeatedPassword, setRepeatedPassword] = useState("");
-    const { onRegister, error } = useContext(AuthenticationContext);
+    const { onRegister, error, isLoading } = useContext(AuthenticationContext);
 
     return(
         <ImgBackground>
@@ -48,7 +48,7 @@ export const CrearCuentaPantalla = () => {
                     <TextError>
                         {error}
                     </TextError>
-                    
+                    {!isLoading ? (                    
                     <Button
                         icon="book-open-outline"
                         color="#66f"
@@ -57,6 +57,9 @@ export const CrearCuentaPantalla = () => {
                     >
                         Crear Cuenta
                     </Button>
+                    ) : (
+                        <ActivityIndicator animating={true} color={Colors.indigoA400}/>
+                    )}
                 </Container>        
         </ImgBackground>
     );

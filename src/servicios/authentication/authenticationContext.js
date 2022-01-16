@@ -38,6 +38,7 @@ export const AuthenticationContextProvider = ({ children }) => {
         }else if(size(password) < 6) {
             setError("La contraseña debe de tener más de 6 caracteres");
         }else {
+            setIsLoading(true);
             firebase
                 .auth()
                 .createUserWithEmailAndPassword(email, password)

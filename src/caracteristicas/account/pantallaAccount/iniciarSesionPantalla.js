@@ -6,12 +6,12 @@ import { ImgBackground,
     TextError
  } from "../componentsAccount/accountStyles";
 import { AuthenticationContext } from "../../../servicios/authentication/authenticationContext";
-import { Button } from "react-native-paper";
+import { Button, ActivityIndicator, Colors } from "react-native-paper";
  
 export const IniciarSesionPantalla = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const { onLogin, error } = useContext(AuthenticationContext);
+    const { onLogin, error, isLoading } = useContext(AuthenticationContext);
 
     return(
         <ImgBackground>
@@ -38,7 +38,7 @@ export const IniciarSesionPantalla = () => {
                     <TextError>
                         {error}
                     </TextError>
-                    
+                    {!isLoading ? (                    
                     <Button
                         icon="login"
                         color="#66f"
@@ -47,6 +47,9 @@ export const IniciarSesionPantalla = () => {
                     >
                         Iniciar Sesión
                     </Button>
+                    ) : (
+                        <ActivityIndicator animating={true} color={Colors.indigoA400}/>
+                    )}                    
                 </Container>        
         </ImgBackground>
     );
